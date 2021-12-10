@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="assets/favicon.ico" rel="shortcut icon" />
+  <link rel="stylesheet" href="css/owfont-regular.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="css/xo.css" />
+  <link rel="stylesheet" href="css/todo.css" />
+
+  <title>momentum</title>
+</head>
+<body>
+  <div class="pop-tools">
+    <div class="pop-tools-wrapper">
+      <fieldset>
+        <legend>Choose your interests</legend>
+        <button class="close-pop">Close</button>
+        <div>
+          <input type="checkbox" id="weather" name="weather" checked>
+          <label for="weather">Weather</label>
+        </div>
+        <div>
+          <input type="checkbox" id="player" name="player" checked>
+          <label for="player">AudioPlayer</label>
+        </div>
+        <div>
+          <input type="checkbox" id="playlist" name="playlist" checked>
+          <label for="playlist">PlayList</label>
+        </div>
+        <div>
+          <input type="checkbox" id="pop-time" name="pop-time" checked>
+          <label for="pop-time">Time</label>
+        </div>
+        <div>
+          <input type="checkbox" id="pop-date" name="pop-date" checked>
+          <label for="pop-date">Date</label>
+        </div>
+        <div>
+          <input type="checkbox" id="pop-greeting" name="pop-greeting" checked>
+          <label for="pop-greeting">Greeting</label>
+        </div>
+        <div>
+          <input type="checkbox" id="pop-quote" name="pop-quote" checked>
+          <label for="pop-quote">Quote</label>
+        </div>
+        <div>
+          <input type="checkbox" id="pop-xo" name="pop-xo" checked>
+          <label for="pop-xo">XO</label>
+        </div>
+        <div>
+          <input type="checkbox" id="pop-todo" name="pop-todo" checked>
+          <label for="pop-todo">ToDo</label>
+        </div>
+      </fieldset>
+    </div>
+  </div>
+  <header class="header">
+    <img class ='tools' src="assets/svg/tools.svg" alt="tools">
+    <div class="player">
+      <div class="range-sound-view">
+        <p class="song-name"></p>
+        <label for="range-audio">
+          <input id="range-audio" type="range"  min="0" max="100" step="1">
+        </label>
+      </div>
+
+      <div class="player-controls">
+        <button class="play-prev player-icon"></button>
+        <button class="play player-icon"></button>
+        <button class="play-next player-icon"></button>
+        <p class="duration"></p>
+        <div class="sound-ctrl">
+          <p class="mute"></p>
+          <input id="soundVolume" type="range" min="0" max="1" step="0.01">
+        </div>
+<!--        <img class ='tools' src="assets/svg/tools.svg" alt="tools">-->
+        <audio src=""></audio>
+      </div>
+      <ul class="play-list">
+
+      </ul>
+    </div>
+    <div class="weather">
+      <input type="text" class="city" />
+      <i class="weather-icon owf"></i>
+      <div class="weather-error"></div>
+      <div class="description-container">
+        <span class="temperature"></span>
+        <span class="weather-description"></span>
+      </div>
+      <div class="wind"></div>
+      <div class="humidity"></div>
+    </div>
+  </header>
+  <main class="main">
+    <div class="slider-icons">
+      <button class="slide-prev slider-icon"></button>
+      <button class="slide-next slider-icon"></button>
+    </div>
+    <time class="time"></time>
+    <date class="date"></date>
+    <div class="greeting-container">
+
+      <span class="greeting"></span>
+      <input type="text" class="name" />
+    </div>
+  </main>
+  <footer class="footer">
+<!--    <button class="change-quote"></button>-->
+    <div class="quote-wrapper">
+      <button class="change-quote"></button>
+      <div class="quote"></div>
+      <div class="author"></div>
+    </div>
+
+  </footer>
+  <div class="xogame">
+    <div id="game-title">Game XO</div>
+    <div id="result-wrapper">
+      <button id="new-game">Start New Game</button>
+      <p id="result"></p>
+    </div>
+    <div id="game"></div>
+  </div>
+  <div class="todo-wrapper">
+    <h1>ToDo List</h1>
+    <div class="flex-wrapper">
+      <div class="add-todo-flex-wrapper">
+        <div class="input-wrapper">
+          <input type="text" id="description-task">
+        </div>
+        <div class="button-wrapper">
+          <button id="add-task-btn">ADD</button>
+        </div>
+      </div>
+      <h2>Tasks:</h2>
+      <div class="todos-wrapper">
+      </div>
+    </div>
+  </div>
+
+
+  <script src="index.js"></script>
+</body>
+</html>

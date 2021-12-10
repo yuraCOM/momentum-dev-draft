@@ -1,0 +1,144 @@
+/*html, body{*/
+/*    width: 100%;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    height: 100%;*/
+/*    background-color: #2fe6be;*/
+/*}*/
+.todo-wrapper{
+    /*background-color: coral;*/
+    box-sizing: border-box;
+}
+.todo-wrapper h1{
+    font-size: 1.5em;
+}
+
+h1, h2{
+    text-align: center;
+}
+
+.flex-wrapper{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    /*width: 90%;*/
+}
+
+.add-todo-flex-wrapper{
+    display: flex;
+    width: 98%;
+    min-height: 40px;
+    align-items: center;
+    background-color: #7c10e9;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.input-wrapper{
+    width: 100%;
+}
+
+.input-wrapper input{
+    width: 100%;
+    height: 25px;
+}
+
+.button-wrapper{
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button-wrapper button{
+    width: 80%;
+    background-color: #20a820;
+    color: white;
+    outline: none;
+    border: none;
+    height: 25px;
+    cursor: pointer;
+}
+.button-wrapper button:hover{
+    background-color: firebrick;
+}
+
+.todos-wrapper{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+}
+
+.todo-item{
+    display: flex;
+    width: 98%;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: orange;
+}
+
+.todo-item.checked{
+    background-color: dimgray;
+    opacity: 0.5;
+}
+
+.todo-item.delition{
+    animation: opacity 2s ease-in-out;
+}
+
+.description{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: blue;
+}
+
+.buttons{
+    /*width: 20%;*/
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.buttons-input{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+.btn-completed{
+    margin: 0 15px;
+}
+.btn-completed:hover{
+    cursor: pointer;
+}
+
+
+.buttons button{
+    outline: none;
+    border: none;
+    background-color: crimson;
+    color: white;
+    cursor: pointer;
+    height: 25px;
+    border-radius: 5px;
+    padding: 0 5px;
+}
+.buttons button:hover{
+    background-color: #3f51b5;
+}
+
+@keyframes opacity {
+    from{
+        opacity: 1;
+        background-color: darkred;
+    }
+    to{
+        opacity: 0;
+    }
+}
+
+
